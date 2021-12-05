@@ -34,7 +34,7 @@ export const updateGroup = (params, config = {}) => {
   return request.put(apiPrefix + '/' + 'Group'+'/'+params.id, params, config)
 }
 export const updateMenu = (params, config = {}) => {
-  return request.put(apiPrefix + '/' + 'Menu', params, config)
+  return request.put(apiPrefix + '/' + 'Menu'+'/'+ params.id, params, config)
 }
 export const updateApi = (params, config = {}) => {
   return request.put(apiPrefix + '/' + 'Api', params, config)
